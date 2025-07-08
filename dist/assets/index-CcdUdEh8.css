@@ -91,7 +91,7 @@ img {
 }
 .calendar {
 	width: clamp(240px, 57.145%, 560px);
-	background-image: url(dist/assets/alpaca-OeY8VF2K.png);
+	background-image: url(alpaca-OeY8VF2K.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 6px;
