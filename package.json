@@ -1,0 +1,21 @@
+{
+	"name": "sovcomtech",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"browserslist": [
+		"cover 99.5%"
+	],
+	"devDependencies": {
+		"autoprefixer": "^10.4.21",
+		"vite": "^7.0.2"
+	},
+	"dependencies": {
+		"sass": "^1.89.2"
+	}
+}

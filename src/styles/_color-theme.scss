@@ -1,0 +1,186 @@
+@use "./variables";
+
+body.dark {
+    & .calendar {
+
+        &__day {
+
+            &-active {
+
+            span {
+                background-color: variables.$day-active-dark-bg;
+
+                span {
+                      background-color: variables.$day-active-dark;
+                      color: variables.$day-active-dark-text;
+                    }
+                }
+            }
+
+            &-fill {
+                span {               
+                    background-color: variables.$day-active-dark-bg;
+                    color: variables.$day-active-dark-text;
+                }            
+            }
+
+            &-interval {
+                span {
+                    background-color: variables.$day-active-dark-bg;
+
+                  span {
+                      background-color: variables.$day-active-dark;
+                      color: variables.$day-active-dark-text;
+                  }
+                }
+            }
+
+            &:nth-child(7n).calendar__day-fill::after {
+                background-color: variables.$day-active-dark-bg;
+            }
+
+            &:nth-child(7n + 1).calendar__day-fill::before {
+                background-color: variables.$day-active-dark-bg;
+            }
+
+          &-interval-start {
+              & > span {
+
+                  &::after {
+                      background-color: variables.$day-active-dark-bg;
+                  }
+              }
+          }
+
+          &-interval-end {
+                & > span {
+
+                    &::before {
+                        background-color: variables.$day-active-dark-bg;
+                    }
+                }
+            }
+          }
+
+          &__control {
+            @media (hover: hover) {
+                &:hover {
+                    background-color: variables.$day-active-dark-bg-contol;
+                }
+            }
+          }
+    }
+}
+
+body.light {
+    & .calendar {
+
+        &__day {
+
+            &-active {
+
+            span {
+                background-color: variables.$day-active-light-bg;
+
+                span {
+                      background-color: variables.$day-active-light;
+                      color: variables.$day-active-light-text;
+                    }
+                }
+            }
+
+            &-fill {
+                span {               
+                    background-color: variables.$day-active-light-bg;
+                    color: variables.$day-active-light-text;
+                }            
+            }
+
+            &-interval {
+                span {
+                    background-color: variables.$day-active-light-bg;
+
+                  span {
+                      background-color: variables.$day-active-light;
+                      color: variables.$day-active-light-text;
+                  }
+                }
+            }
+
+            &:nth-child(7n).calendar__day-fill::after {
+                background-color: variables.$day-active-light-bg;
+            }
+
+            &:nth-child(7n + 1).calendar__day-fill::before {
+                background-color: variables.$day-active-light-bg;
+            }
+
+          &-interval-start {
+              & > span {
+
+                  &::after {
+                      background-color: variables.$day-active-light-bg;
+                  }
+              }
+          }
+
+          &-interval-end {
+                & > span {
+
+                    &::before {
+                        background-color: variables.$day-active-light-bg;
+                    }
+                }
+            }
+          }
+
+          &__control {
+            @media (hover: hover) {
+                &:hover {
+                    background-color: variables.$day-active-light-bg-contol;
+                }
+            }
+          }
+    }
+}
+
+
+// :root {
+//   @media (prefers-color-scheme: light) {
+//     --theme: ☀️;
+//     color-scheme: light;
+//   }
+  
+//   @media (prefers-color-scheme: dark) {
+//     --theme: 🌑;
+//     color-scheme: dark;
+//   }
+// }
+
+// :root:has([value="☀️"]:checked) {
+//    --theme: ☀️;
+//     color-scheme: light;
+// }
+
+// :root:has([value="🌑"]:checked) {
+//   --theme: 🌑;
+//     color-scheme: dark;
+// }
+
+// body {
+//   color-scheme: light;
+//   --clr-body-bg: hsl(10, 25%, 95%);
+//   --clr-card-bg: hsl(10, 25%, 98%);
+//   --clr-text: #232323;
+//   --clr-heading: hsl(18, 65%, 48%);
+//   $day-active: #b9b9ba;
+  
+//   @container style(--theme: 🌑) {
+//     color-scheme: dark;
+//     --clr-body-bg: hsl(173, 10%, 7%);
+//     --clr-card-bg: hsl(173, 30%, 10%);
+//     --clr-text: #cbd5e1;
+//     --clr-heading: hsl(173, 50%, 70%);
+//     $day-active: #2674a1;
+//   }
+// }
